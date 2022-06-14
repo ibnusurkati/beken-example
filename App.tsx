@@ -37,13 +37,20 @@ const HomeScreen = ({
 }
 
 const BekenScreen = () => {
+  let urlPwa = 'https://sandbox-home.produkbeken.id?'
+
+  urlPwa += `uuid=${encodeURIComponent('uuid-mitra-partner')}&`
+  urlPwa += `name=${encodeURIComponent('jhon doe')}&`
+  urlPwa += `phone=${encodeURIComponent('081234567890')}&`
+  urlPwa += `email=${encodeURIComponent('jhon-doe@gmail.com')}&`
+  urlPwa += `publickey=${encodeURIComponent('public-key')}&`
+  urlPwa += `secretkey=${encodeURIComponent('secret-key')}`
+
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#1E1E1E" />
       <WebView
-        source={{
-          uri: 'https://sandbox-home.produkbeken.id?uuid=uuid-mitra-partner&name=jhon+doe&phone=081234567890&email=dev.surkati@gmail.com&publickey=public-key-get-into-webportal&secretkey=secrect-key-get-into-webportal'
-        }}
+        source={{ uri: urlPwa }}
         javaScriptEnabled={true}
         domStorageEnabled={true}
       />
