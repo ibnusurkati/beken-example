@@ -40,7 +40,7 @@ const BekenScreen = () => {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#1E1E1E" />
-      <WebView source={{ uri: 'https://sandbox-home.produkbeken.id?prefix=jhonstore&publickey=public-key-get-into-webportal&secretkey=secrect-key-get-into-webportal' }}/>
+      <WebView source={{ uri: 'https://sandbox-home.produkbeken.id?uuid=uuid-mitra-partner&name=jhon+doe&phone=081234567890&email=dev.surkati@gmail.com&publickey=public-key-get-into-webportal&secretkey=secrect-key-get-into-webportal' }}/>
     </>
   )
 }
