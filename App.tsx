@@ -40,7 +40,13 @@ const BekenScreen = () => {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#1E1E1E" />
-      <WebView source={{ uri: 'https://sandbox-home.produkbeken.id?prefix=jhonstore&publickey=public-key-get-into-webportal&secretkey=secrect-key-get-into-webportal' }}/>
+      <WebView
+        source={{
+          uri: 'https://sandbox-home.produkbeken.id?prefix=jhonstore&publickey=public-key-get-into-webportal&secretkey=secrect-key-get-into-webportal'
+        }}
+        javaScriptEnabled={true}
+        domStorageEnabled={true}
+      />
     </>
   )
 }
