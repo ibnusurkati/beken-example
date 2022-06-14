@@ -10,7 +10,6 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@ibnusurkati/beken-engine": "^2.0.5",
     "react": "17.0.2",
     "react-native": "0.68.2"
   },
